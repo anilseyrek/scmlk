@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="icon" 
+			  type="image/png" 
+			  href="favicon.png" />
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="An&#305;l Seyrek">
+		<meta name="description" content="Ne kadar sa&ccedil;ma olabilir ki!">
+		<meta name="keywords" content="scmlk, sa&ccedil;ma, sa&ccedil;mal&#305;k, bullshit, nonsense, An&#305;l, Seyrek, Bo&#287;azi&ccedil;i, Computer, Engineer, University, &Uuml;niversite, Mersin Fen, &Ouml;&#287;renci, student">
+		<title>scmlk</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="script.js"></script>
+	</head>	
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44819212-6', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<body onload="loadConversation()">
+
+		<div id="header">
+			<a href="#" title="Hakk&#305;nda" onclick="getAbout();return false;"><img id="logo" src="logo.png"></a>
+			<!---<div id="about"><a id="about" href="#" title="Hakkýnda" onclick="getAbout();return false;">Hakkýnda</a></div>--->
+		</div>
+	
+		<div id="fb-login">
+			<br><br><br>
+			<!--
+			  Below we include the Login Button social plugin. This button uses
+			  the JavaScript SDK to present a graphical Login button that triggers
+			  the FB.login() function when clicked.
+			-->
+			<a id="about" href="#" title="Hakk&#305;nda" onclick="getAbout();return false;">Hakk&#305;nda</a><br><br>
+			
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+
+			<div id="status">
+			</div>
+		</div>
+		<br>
+		
+		<div id="conversation">
+		</div>
+		<div id="posting">
+			<div id="posting-item">
+				<div id="text-area"><textarea id="posttxt" name="posttext" placeholder="Ne kadar sa&ccedil;ma olabilir ki?" autofocus></textarea></div>
+				<div id="post-button-area"><button id="post-button" onclick="sharePost()">Yard&#305;r</button></div>
+			</div>
+		</div>
+
+	</body>
+<html>
